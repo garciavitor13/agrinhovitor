@@ -1,0 +1,231 @@
+:root {
+    --TextoBranco: white;
+}
+
+.Order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 2px solid white;
+}
+
+.LogoHeader {
+    width: 335px;
+    transition: all .5s;
+}
+
+ol.NavMenu {
+    margin: 0px !important;
+    padding: 0px 140px 0px 0px !important;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+section#SlideHome {
+    background: url(SlideImg.jpg);
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    margin: 0px;
+}
+
+li.ItemMenu {
+    list-style: none;
+    transition: all .5s;
+}
+
+.ItemMenu a {
+    color: #2a2d96;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.ItemMenu:hover {
+    transform: translateY(-3px);
+    scale: 1.1;
+}
+
+.LogoHeader:hover {
+    scale: 1.1;
+}
+
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.TextSlide {
+    text-align: center;
+    color: var(--TextoBranco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+h3.SubtituloSlide {
+    text-transform: lowercase;
+    font-size: 42px;
+    margin: 0px;
+    font-weight: 400;
+    background: white;
+    color: green;
+    padding: 10px 30px;
+    border-radius: 60px;
+}
+
+h4.TituloSlide {
+    font-size: 48px;
+    margin: 35px 0px;
+    width: 57%;
+    line-height: 52px;
+    text-transform: uppercase;
+}
+
+p.ParagrafoSlide {
+    font-size: 26px;
+    width: 55%;
+    margin: 0px;
+    font-weight: 400;
+}
+
+p {
+    margin: 0px;
+}
+
+footer {
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TopFooter {
+    display: flex;
+    gap: 50px;
+    margin: 0px 0px 5px 0px;
+    font-size: 18px;
+}
+
+.BottomFooter {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.SpanFooterUtilizados {
+    font-weight: 500;
+}
+
+.ContainerReceitas {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 80px;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.OrdemLado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 0px 0px 10px 0px;
+}
+
+.IconeServe,
+.IconeTempo {
+    width: 30px !important;
+    border-radius: 0px !important;
+}
+
+.IconesIngredientes {
+    width: 25px !important;
+    border-radius: 0px !important;
+}
+
+.Receita img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.Receita h2 {
+    font-size: 32px;
+    margin: 0px 0px 20px 0px;
+    text-transform: uppercase;
+}
+
+.Receita h4 {
+    margin: 20px 0px 10px 0px;
+}
+
+.Receita {
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 20px;
+    height: max-content;
+}
+
+.ProporcaoIngrediente {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .ContainerReceitas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ol.NavMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 10px !important;
+    }
+
+    .Order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TopFooter {
+        display: contents;
+    }
+
+    .BottomFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-top: 35px;
+    }
+
+    h4.TituloSlide {
+        font-size: 30px;
+        width: 90%;
+        line-height: 40px;
+    }
+
+    p.ParagrafoSlide {
+        width: 90%;
+        font-size: 20px;
+    }
+}
